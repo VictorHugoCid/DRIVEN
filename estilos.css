@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+	/* width: 1366px; */
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.primary-container{
+	background-color: #dbdbdb;
+}
+
+	/* HEADER */
+.header {
+	width: 935px;
+	height: 54px;
+	background-color: #ffffff;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	position: fixed;
+	top: 0px;
+	
+	z-index: 2;	
+	/*precisei pq com o relative 
+	do primary+sugestoesia dar merda*/
+}
+
+/* HEADER-BORDER */
+
+.header-border {
+	height: 1px;
+	width: 100%;
+	border-top: 1px solid #dbdbdb;
+	top: 54px;
+	position: fixed;
+}
+
+
+/* detalhes header box 1 */
+
+.header-box1{
+	display: flex;
+	align-items: center;
+}
+
+.linha-vertical{
+	width: 1px;
+	height: 22px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-right: 1px solid #DBDBDB;
+}
+
+ion-icon{
+	font-size: 22px;
+}
+
+.header-box1 img{
+	margin-top: 6px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.paperPlaneMobile{
+	display: none;
+}
+
+/* detalhes header box 2 */
+
+.pesquisa {
+	width: 215px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FAFAFA;
+	border: 1px solid #DBDBDB;
+	border-radius: 3px;
+}
+
+/* detalhes header box 3 */
+
+.header-box3 ion-icon{
+	margin-left: 20px;
+}
+
+/* detalhes header-box4 */
+.header-box4{
+	display:none;
+
+}
+
+.primary-container{
+	background-color: #ffffff;
+	width: 935px;
+	height: auto; 
+	display: flex;
+	justify-content: space-around;
+	
+	/*Para deixar a caixa de sugestões fixa*/ 
+	/* position: relative; */
+	
+}
+
+.secondary-container {
+	width: 614px;
+	height: 4000px;
+	background-color: #FFFFFF;
+	margin-top: 88px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stories{
+	width: 614px;
+	height: 118px;
+	background-color: #FFFFFF;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding-left: 18px;
+
+
+	/* SETINHA */
+	position: relative ;
+	
+
+}
+
+.feed{
+	width: 614px;
+	height: 3800px;
+	background-color: #ffffff;
+}
+
+/* SUGESTÕES */ 
+.sugestoes{
+	width: 293px;
+	height: 15%;
+	margin-left: 20px;
+	margin-top: 88px;
+	background-color: #FFFFFF;
+
+	/* Deixar fixo */
+	/* position: absolute; */
+
+}
+
+/* Detalhes da box SUGESTÕES */ 
+
+.sugestoes img{
+	border-radius: 50%;
+}
+
+.sugestoes h1{
+	font-size: 14px;
+	color: #262626;
+	font-weight: 800;
+	line-height: 16px;
+
+}
+
+.sugestoes h2{
+	font-size: 12px;
+	color: #8e8e8e;
+}
+
+.sugestoes h3{
+	font-size: 11px;
+	color: #c7c7c7;
+}
+
+.sugestoes p{
+	font-size: 12px;
+	color: #139ef2;
+	margin-right: 8px;
+}
+
+.sugestion-box1{
+	display: flex;
+	align-items: center;
+	/* height: 118px; */
+	margin-top: 23px;
+}
+
+.sugestion-box1 img{
+	width: 56px;
+	height: 56px;
+	margin-right: 17px;
+	border-radius: 50%;
+}
+
+.sugestion-box2{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+
+.sug1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+
+.sug1-left{
+	display: flex;
+}
+
+.sug1-left img{
+	margin-right: 11px;
+}
+
+.sugestion-box4{
+	margin-top: 33px ;
+}
+
+.sugestion-box4 h3{
+	margin-top: 18px;
+}
+
+/* POST */
+.post{
+	width: 614px;
+	height: 749px;
+	background-color: #FFFFFF;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	margin-bottom: 60px;
+ 	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+
+/* STORIES */
+
+
+.storieNname{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 12px;
+	width: 66px;
+	overflow:visible;
+}
+
+.storieNname + div{/* se repetir vai 
+	usar o código */
+	
+	margin-left: 15px;
+
+}
+
+.storie-full {
+	width: 66px;
+	height: 66px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	position: relative;
+
+}
+
+.outer{
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+}
+
+
+.inner{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+.setinha{
+	width: 50px;
+	/* border-radius: 50%; */
+	/* z-index: 1; */
+	position: absolute;
+	right: 5px;
+}
+
+
+/* Post 1 */
+
+	/* PERFIL*/
+.perfil{
+	width: 614px;
+	height: 61px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.perfil div{
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 16px;
+}
+
+.photoNname{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.post .photoNname img{
+	width: 32px;
+	height: 32px;
+	margin: auto 15px;
+	border-radius: 50%;
+}
+
+.reticencias{
+	margin-right: 17px;
+}
+	/* IMAGEM */
+.post img{
+	width: 612px;
+	height: 612px;
+}
+
+	/* REACTIONS */
+
+.reactions{
+	width: 614px;
+	height: 38px;
+	background-color: #ffffff;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reactions div{
+	margin-left: 12px;
+}
+
+.reactions ion-icon{
+	margin-right: 12px;
+}
+
+	/* LIKES */
+.likes{
+	width: 614px;
+	height: 38px;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	font-size: 50xp;
+
+}
+
+.likes img {
+	width: 20px;
+	height: 20px;
+	margin-left: 17px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+h1{
+	font-size: 14px;
+}
+
+strong {
+	font-weight: 900;
+	font-size: 14px;
+}
+
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Viewport breakout para tablet*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+@media (max-width: 935px) {
+	.sugestoes {
+		display: none;
+	}
+
+	/* 935px */
+	
+	.header {/* 935px */
+		width: 100%;
+		left: 0;
+		
+		
+
+	}
+	
+	/* .header img{
+		border-left: 3px solid red;
+	} */
+	
+	.primary-container{/* 935px */
+		width: 100%;
+
+		
+	}
+	
+	.secondary-container {/* 935px */
+		width: 614px; /* tem q ser 614px */
+
+	}
+	
+	.stories{/* 935px */
+		width: 100%;
+
+	}
+	
+	.feed{/* 935px */
+		width: 100%;
+
+	}
+	
+
+	
+	.post{/* 935px */
+		width: 100%;
+		align-items: center;
+	}
+	
+	
+	/*  935px detalhes header box 1 */
+
+	/* 	.linha-vertical {
+		width: 1px;
+		height: 22px;
+		margin-right: 10px;
+		margin-left: 10px;
+		border-right: 1px solid red;
+	} */
+	
+	.header-box1{ /* 935px*/
+		display: flex;
+		/* align-items: center; */
+	}
+	
+	.header-box1 img{ /* 935px*/
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	}
+	
+	/*  935px detalhes header box 2 */
+	
+	/* 	.pesquisa {
+		width: 215px;
+		height: 28px;
+		border: 1px solid red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #FAFAFA;
+		border: 1px solid #DBDBDB;
+		border-radius: 3px;
+	} */
+	
+	/*  935px detalhes header box 3 */
+	
+	
+	
+	
+	/*  935px Post 1 */
+	
+	.perfil{
+		width: 100%;
+	
+	}
+	
+	.post img{
+		width: 100%;
+	}
+	
+	.reactions{
+		width: 100%;
+
+	}
+	
+	.likes{
+		width: 100%;
+
+	} 
+	
+	.likes img{
+		width: 20px;
+		height: 20px;
+	}
+
+	
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Viewport breakout para smartphone*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+@media (max-width: 614px) {
+	.sugestoes {
+		display: none;
+	}
+
+	/* 614px */
+
+	.header {
+		/* 614px */
+		width: 100%;
+		padding-right: 16px;
+		padding-left: 20px;
+
+	}
+
+	/* detalhes header box 1 */
+
+	.linha-vertical {
+		display:none;
+	}
+
+	.header-box1 {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.paperPlaneMobile{
+		display: inherit;
+
+	}
+
+
+	/* detalhes header box 2 */
+
+	.pesquisa {
+		display: none;
+	}
+
+	/* detalhes header box 3 */
+
+	.header-box3 {
+		display: none;
+	}
+
+	
+	.primary-container{/* 614px */
+		
+		width: 100%;
+
+		
+	}
+	
+	.secondary-container {/* 614px */
+		width: 100%;
+
+	}
+	
+	.stories{/* 614px */
+		width: 100%;
+
+	}
+	
+	.feed{/* 614px */
+		width: 100%;
+
+	}
+	
+
+	
+	.post{/* 614px */
+		width: 100%;
+		align-items: center;
+	}
+	
+	
+	/*  614px Post 1 */
+	
+	.perfil{
+		width: 100%;
+	
+	}
+	
+
+	.post img{
+		width: 100%;
+	}
+
+	
+	.reactions{
+		width: 100%;
+	}
+
+	
+	
+	.likes{
+		width: 100%;
+	} 
+
+	.likes img{
+		width: 20px;
+		height: 20px;
+	}
+
+
+
+}
